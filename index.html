@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=5" />
+
+  <link rel="icon" href="./images/devchallenges.png" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  
+  <title>Devchallenges</title>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+
+      <section>
+        <h1>Checkout</h1>
+        <div class="contact-info">
+          <h2>Contact information</h2>
+          <div class="form">
+            <div class="form-input">
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="email" placeholder="Enter your email...">
+
+              <span class="icon material-symbols-outlined">
+                mail
+              </span>
+            </div>
+            <div class="form-input">
+              <label for="phone">Phone</label>
+              <input type="tel" name="phone" id="phone" placeholder="Enter your phone...">
+              <span class="icon material-symbols-outlined">
+                call
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="shipping-info">
+          <h2>Shipping address</h2>
+          <div class="form">
+            <div class="form-input">
+              <label for="name">Full name</label>
+              <input type="text" name="name" id="name" placeholder="Rodney Cotton">
+              <span class="material-symbols-outlined">
+                account_circle
+              </span>
+            </div>
+            <div class="form-input">
+              <label for="address">Address</label>
+              <input type="tel" name="address" id="address" placeholder="Your address...">
+              <span class="icon material-symbols-outlined">
+                home
+              </span>
+            </div>
+            <div class="form-input">
+              <label for="city">City</label>
+              <input type="tel" name="city" id="city" placeholder="Your city...">
+              <span class="material-symbols-outlined">
+                location_city
+              </span>
+            </div>
+            <div class="code">
+              <div class="form-input">
+                <label for="country">Country</label>
+                <select name="country" id="country" aria-placeholder="Your country">
+                  <option disabled selected>Your country...</option>
+                  <option value="Ghana">Ghana</option>
+                  <option value="Nigeria">Nigeria</option>
+                  <option value="Togo">Togo</option>
+                </select>
+                <span class="material-symbols-outlined">
+                  public
+                </span>
+              </div>
+              <div class="form-input">
+                <label for="code">Postal code</label>
+                <input type="tel" name="postal-code" id="code" placeholder="Your postal code...">
+                <span class="material-symbols-outlined">
+                  markunread_mailbox
+                </span>
+              </div>
+            </div>
+            <div class="save">
+              <input type="checkbox" name="save" id="save">
+              <label for="save">Save this information for next time</label>
+            </div>
+          </div>
+
+        </div>
+        <div class="btn">
+          <button type="submit">Continue</button>
+        </div>
+      </section>
+
+      <aside>
+        <div class="cart-item">
+          <div class="img">
+            <img src="./images/photo1.png" alt="">
+          </div>
+          <div class="detail">
+            <h4>Vintage Backbag</h4>
+            <div class="price">
+              <span>$54.99</span><span>$94.99</span>
+            </div>
+            <div class="btn-update">
+              <span class="btn subtract">-</span>
+              <span class="number">1</span>
+              <span class="btn add">+</span>
+            </div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <div class="img">
+            <img src="./images/photo2.png" alt="">
+          </div>
+          <div class="detail">
+            <h4>Levi Shoes</h4>
+            <div class="price">
+              <span>$74.99</span><span>$124.99</span>
+            </div>
+            <div class="btn-update">
+              <span class="btn subtract">-</span>
+              <span class="number">1</span>
+              <span class="btn add">+</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="shipping-cost">
+          <span>Shipping</span>
+          <span>$19</span>
+        </div>
+        <div class="total">
+          <span>Total</span>
+          <span>$148.98</span>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <footer style=" width:100%; text-align: center; padding:.5rem;">
+    <small>Created by <a style="color: blue;" href="https://github.com/chinyereunamba">Chinyere Unamba</a> - <a style="color: blue;" href="https://devchallenges.io">devChallenges</a></small>
+  </footer>
+  <script>
+    const add = document.querySelectorAll('.btn.add')
+    const subtract = document.querySelectorAll('.btn.subtract')
+    const number = document.querySelectorAll('span.number')
+    add.forEach(el =>{
+      console.log(number)
+    }
+    )
+    //subtract.forEach(el => el.addEventListener('click', () => {
+    //  console.log("ech")
+    //
+    //})
+    //)
+
+    console.log(add)
+  </script>
+</body>
+
+</html>

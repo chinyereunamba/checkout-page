@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+main {
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    height: inherit;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 2rem auto;
+}
+
+.contact-info,
+.shipping-info {
+    margin: 2.5rem 0 1rem 0;
+}
+
+section {
+    max-width: 600px;
+    width: 100%;
+    padding: 2rem;
+}
+
+section h1 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: #4E5150;
+}
+
+section h2 {
+    font-size: 1.125rem;
+    margin: 1rem 0;
+    font-weight: 600;
+    color: #333;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form .form-input {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.form-input label {
+    margin-bottom: 9px;
+    font-size: 0.75rem;
+}
+
+.form-input input,
+.form-input select {
+    font-size: 1rem;
+    padding: 0.8rem 2.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid #828282;
+}
+
+.form-input span {
+    position: absolute;
+    top: 65%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #828282;
+    font-size: 1.5rem;
+}
+
+.code {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+.code .form-input {
+    width: 100%;
+}
+
+.code input {
+    width: 100%;
+}
+.save {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+}
+section .btn {
+    text-align: right;
+}
+
+button {
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+    border-radius: 0.75rem;
+    width: 8rem;
+    background: #f2994a;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+aside {
+    max-width: 350px;
+    width: 100%;
+    padding: 2rem;
+    background: #f2f2f2;
+    border-radius: 0.75rem;
+}
+
+aside .cart-item {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.cart-item .img img {
+    width: 110px;
+    border-radius: 10px;
+}
+
+.cart-item .detail {
+    width: 100%;
+}
+
+.detail h4 {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.detail .price {
+    padding: 0.2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.detail .price span:first-child {
+    color: #f2994a;
+    font-size: 1.1rem;
+}
+
+.detail .price span:nth-child(2) {
+    font-size: 0.8rem;
+    text-decoration: line-through;
+}
+
+.detail .btn-update {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 1px solid;
+    margin: 0.5rem 0;
+    padding: 0.6rem;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.btn-update .btn {
+    padding: 0.1rem 0.4rem;
+    background-color: #cfcfcf;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.shipping-cost,
+.total {
+    display: flex;
+    justify-content: space-between;
+    color: #333;
+}
+
+.shipping-cost {
+    padding: 0.7rem 0;
+    margin: 3rem 0 0.7rem 0;
+    border-top: 1px solid #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+@media screen and (max-width:800px){
+    .container{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container section , .container aside{
+        max-width: 90%;
+        margin: auto;
+    }
+    .container section {
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+}
